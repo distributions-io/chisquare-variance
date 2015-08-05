@@ -6,8 +6,8 @@ Variance
 
 The [variance](https://en.wikipedia.org/wiki/variance) for a [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="\operatorname{}\left[ X \right] = " data-equation="eq:variance">
-	<img src="" alt="variance for a Chi-squared distribution.">
+<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 2k" data-equation="eq:variance">
+	<img src="https://cdn.rawgit.com/distributions-io/chisquare-variance/9907a5c33cd4b7e5783bc663d997fa5dcc6515de/docs/img/eqn.svg" alt="Variance for a Chi-squared distribution.">
 	<br>
 </div>
 
