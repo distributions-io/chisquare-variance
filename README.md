@@ -41,16 +41,16 @@ var matrix = require( 'dstructs-matrix' ),
 	i;
 
 out = variance( 2 );
-// returns ~4.000
+// returns 4.000
 
 k = [ 2, 4, 8, 16 ];
 out = variance( k );
 
-// returns [ ~4.000, ~8.000, ~16.000, ~32.000 ]
+// returns [ 4.000, 8.000, 16.000, 32.000 ]
 
 k = new Float32Array( k );
 out = variance( k );
-// returns Float64Array( [~4.000,~8.000,~16.000,~32.000] )
+// returns Float64Array( [4.000,8.000,16.000,32.000] )
 
 k =  matrix( [ 2, 4, 8, 16 ], [2,2] );
 /*
@@ -60,8 +60,8 @@ k =  matrix( [ 2, 4, 8, 16 ], [2,2] );
 
 out = variance( k );
 /*
-	[ ~4.000 ~8.000,
-	  ~16.000 ~32.000 ]
+	[ 4.000 8.000,
+	  16.000 32.000 ]
 */
 ```
 
@@ -90,7 +90,7 @@ function getValue( d, i ) {
 var out = variance( k, {
 	'accessor': getValue
 });
-// returns [ ~4.000, ~8.000, ~16.000, ~32.000 ]
+// returns [ 4.000, 8.000, 16.000, 32.000 ]
 ```
 
 To [deepset](https://github.com/kgryte/utils-deep-set) an object `array`, provide a key path and, optionally, a key path separator.
@@ -106,10 +106,10 @@ var k = [
 var out = variance( k, 'x|1', '|' );
 /*
 	[
-		{'x':[9,~4.000]},
-		{'x':[9,~8.000]},
-		{'x':[9,~16.000]},
-		{'x':[9,~32.000]},
+		{'x':[9,4.000]},
+		{'x':[9,8.000]},
+		{'x':[9,16.000]},
+		{'x':[9,32.000]},
 	]
 */
 
@@ -150,7 +150,7 @@ k = [ 2, 4, 8, 16 ];
 out = variance( k, {
 	'copy': false
 });
-// returns [ ~4.000, ~8.000, ~16.000, ~32.000 ]
+// returns [ 4.000, 8.000, 16.000, 32.000 ]
 
 bool = ( data === out );
 // returns true
@@ -165,8 +165,8 @@ out = variance( mat, {
 	'copy': false
 });
 /*
-	[ ~4.000 ~8.000,
-	  ~16.000 ~32.000 ]
+	[ 4.000 8.000,
+	  16.000 32.000 ]
 */
 
 bool = ( mat === out );
